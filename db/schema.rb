@@ -29,9 +29,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_23_113653) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
-    t.string "profiel"
+    t.string "profile"
+    t.string "occupation"
     t.string "position"
-    t.string "affiliation"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
