@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_23_113653) do
   create_table "prototypes", charset: "utf8", force: :cascade do |t|
     t.string "title"
     t.string "user"
-    t.text "image"
+    t.text "concept"
     t.text "catch_copy"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

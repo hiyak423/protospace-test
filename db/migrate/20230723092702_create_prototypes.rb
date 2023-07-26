@@ -3,7 +3,7 @@ class CreatePrototypes < ActiveRecord::Migration[7.0]
     create_table :prototypes do |t|
       t.string :title
       t.string :user
-      t.text :image
+      t.text :concept
       t.text :catch_copy
       t.timestamps
     end
