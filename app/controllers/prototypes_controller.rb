@@ -16,10 +16,8 @@ class PrototypesController < ApplicationController
   def create
     @prototype = Prototype.new(prototype_params)
     if @prototype.save
-      # 保存成功時の処理
-      redirect_to '/', notice: 'Prototypeが正常に作成されました。'
+      redirect_to '/'
     else
-      # 保存失敗時の処理
       render :new
     end
   end
