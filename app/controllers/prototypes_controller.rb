@@ -5,7 +5,12 @@ class PrototypesController < ApplicationController
   end
   
   def new
+    if user_signed_in?
     @prototype = Prototype.new
+    render :new
+    else
+      redirect_to user_session_path
+    end
   end
 
   def create
